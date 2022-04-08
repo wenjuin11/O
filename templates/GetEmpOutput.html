@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Information</title>
+</head>
+<center>
+	<font color="black" size="5" style="font-family: avenir">
+
+		<h1 style="color: DodgerBlue">Employee Information</h1>
+
+		<body bgcolor="lightgrey">
+		
+		<li class="w3-padding-16">
+
+			<form action="/fetchdata" autocomplete="on" method="POST">
+			
+			<div>
+			
+			<table>
+			
+			<thead>
+			
+		    <tr>
+			
+			<th>Employee ID</th>
+			
+			<th>First Name</th>
+			
+			<th>Last Name</th>
+			
+			<th>Primary Skill</th>
+			
+			<th>Location</th>
+			
+			<th>Job</th>
+			
+			<th>Salary</th>
+			
+			<th>Phone No</th>
+			
+            </tr>
+			
+			</thead>
+			
+		<tbody>
+		
+		<tr>
+		
+		<td>{{ emp_id }}</td>
+		<td>{{ first_name }}</td>
+        <td>{{ last_name }}</td>
+        <td>{{ pri_skill }}</td>
+		<td>{{ location }}</td>
+		<td>{{ job }}</td>
+		<td>{{ salary }}</td>
+		<td>{{ phone_no }}</td>
+		
+		</tr>
+		</body>
+		
+		</table>
+		
+		</div></li>
+		</form>		
+		
+        <form action="/register" autocomplete="on" method="POST">
+				
+				<button type="submit" class="w3-button w3-dark-grey">GO TO UPDATE DATABASE PAGE</button><br><br>
+				
+			</form>
+</center>
+</html>
